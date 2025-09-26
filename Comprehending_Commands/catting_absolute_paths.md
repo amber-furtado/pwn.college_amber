@@ -7,7 +7,8 @@ Catting absolute paths
 ```bash
 Connected!
 hacker@commands~catting-absolute-paths:~$ cat /flag
-pwn.college{AD_zV-WWUL-Bo35_6hXCW1vYkk2.QX5ETO0wyM5EzNzEzW}```
+pwn.college{AD_zV-WWUL-Bo35_6hXCW1vYkk2.QX5ETO0wyM5EzNzEzW}
+```
 
 ## Incorrect tangents I went on
 None
