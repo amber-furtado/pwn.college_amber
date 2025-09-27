@@ -12,6 +12,7 @@ pwn.college{8FYyikkKgSuSRb3T8CoAw6huC9U.QX2IDO0wyM5EzNzEzW}
 ```
 
 ## Incorrect tangents I went on
+```bash
 Connected!
 hacker@globbing~exclusionary-globbing:~$ cd /challenge/files
 hacker@globbing~exclusionary-globbing:/challenge/files$ /challenge/run [pwn]*
@@ -21,6 +22,7 @@ laughing magical optimistic queenly radiant splendid thrilling uplifting
 victorious xenial youthful zesty).
 Instead, it expanded to:
 nice pwning wonderful
+```
 
 ## What I learned
 I learned about multiple globbing in a more detailed way.
