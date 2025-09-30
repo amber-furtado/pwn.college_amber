@@ -15,7 +15,7 @@ read side and the write side is open, so /challenge/run will not actually be
 launched until you start reading from the FIFO!
 ```
 
-TERMINAL
+TERMINAL:
 ```bash
 hacker@piping~named-pipes:~$ cat /tmp/flag_fifo
 hacker@piping~named-pipes:~$ cat /tmp/flag_fifo
