@@ -1,5 +1,5 @@
 # Challenge Name
-Moving Files
+Listing Processes
 
 ## My solve
 **Flag:** `pwn.college{kgVZB2a2BkMQH05_sGOc1EwVqET.QX4MDO0wyM5EzNzEzW}`
