@@ -31,7 +31,7 @@ Needed permissions of "/challenge/pwn": ---------
 - the world doesn't have read permissions
 - the world doesn't have write permissions
 - the world doesn't have execute permissions
-hacker@permissions~permission-tweaking-practice:~$ chmod a= /challenge/pwn
+hacker@permissions~permission-tweaking-practice:~$ chmod a-rwx /challenge/pwn
 You set the correct permissions!
 Round 2 of 8!
 
@@ -56,7 +56,7 @@ Needed permissions of "/challenge/pwn": rw----rw-
 * the world does have read permissions
 * the world does have write permissions
 - the world doesn't have execute permissions
-hacker@permissions~permission-tweaking-practice:~$ chmod u=rw,g=,o=rw /challenge/pwn
+hacker@permissions~permission-tweaking-practice:~$ chmod u+rw,o+rw /challenge/pwn
 You set the correct permissions!
 Round 3 of 8!
 
@@ -81,7 +81,7 @@ Needed permissions of "/challenge/pwn": r-----r--
 * the world does have read permissions
 - the world doesn't have write permissions
 - the world doesn't have execute permissions
-hacker@permissions~permission-tweaking-practice:~$ chmod u=r,g=,o=r /challenge/pwn
+hacker@permissions~permission-tweaking-practice:~$ chmod u-w,o-w /challenge/pwn
 You set the correct permissions!
 Round 4 of 8!
 
@@ -106,7 +106,7 @@ Needed permissions of "/challenge/pwn": ---------
 - the world doesn't have read permissions
 - the world doesn't have write permissions
 - the world doesn't have execute permissions
-hacker@permissions~permission-tweaking-practice:~$ chmod u=,g=,o= /challenge/pwn
+hacker@permissions~permission-tweaking-practice:~$ chmod u-r,o-r /challenge/pwn
 You set the correct permissions!
 Round 5 of 8!
 
@@ -131,7 +131,7 @@ Needed permissions of "/challenge/pwn": ------rwx
 * the world does have read permissions
 * the world does have write permissions
 * the world does have execute permissions
-hacker@permissions~permission-tweaking-practice:~$ chmod u=,g=,o=rwx /challenge/pwn
+hacker@permissions~permission-tweaking-practice:~$ chmod o+rwx /challenge/pwn
 You set the correct permissions!
 Round 6 of 8!
 
@@ -156,7 +156,7 @@ Needed permissions of "/challenge/pwn": ------r--
 * the world does have read permissions
 - the world doesn't have write permissions
 - the world doesn't have execute permissions
-hacker@permissions~permission-tweaking-practice:~$ chmod u=,g=,o=r /challenge/pwn
+hacker@permissions~permission-tweaking-practice:~$ chmod o-wx /challenge/pwn
 You set the correct permissions!
 Round 7 of 8!
 
@@ -181,7 +181,7 @@ Needed permissions of "/challenge/pwn": rw----r--
 * the world does have read permissions
 - the world doesn't have write permissions
 - the world doesn't have execute permissions
-hacker@permissions~permission-tweaking-practice:~$ chmod u=rw,g=,o=r /challenge/pwn
+hacker@permissions~permission-tweaking-practice:~$ chmod u+rw /challenge/pwn
 You set the correct permissions!
 Round 8 of 8!
 
@@ -206,7 +206,7 @@ Needed permissions of "/challenge/pwn": -w----r--
 * the world does have read permissions
 - the world doesn't have write permissions
 - the world doesn't have execute permissions
-hacker@permissions~permission-tweaking-practice:~$ chmod u=w,g=,o=r /challenge/pwn
+hacker@permissions~permission-tweaking-practice:~$ chmod u-r /challenge/pwn
 You set the correct permissions!
 You've solved all 8 rounds! I have changed the ownership
 of the /flag file so that you can 'chmod' it. You won't be able to read
@@ -222,9 +222,10 @@ Current permissions of "/flag": ---------
 - the world doesn't have read permissions
 - the world doesn't have write permissions
 - the world doesn't have execute permissions
-hacker@permissions~permission-tweaking-practice:~$ chmod u=r,go= /flag
+hacker@permissions~permission-tweaking-practice:~$ chmod u+r /flag
 hacker@permissions~permission-tweaking-practice:~$ cat /flag
 pwn.college{ws48gROqWveQRzM2bkElxWeVVff.QXwEjN0wyM5EzNzEzW}
+
 
 ```
 
